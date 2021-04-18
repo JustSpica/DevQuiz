@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Dev Quiz</string>
+    <string name="stringFrom">From</string>
+    <string name="stringDeveloperOne">Guilherme Spica Luiz</string>
+    <string name="stringDeveloperTwo">Lucas Vieira</string>
+    <string name="stringUsername">Nome de usuário</string>
+    <string name="stringPassword">Senha</string>
+    <string name="stringSignIn">Cadastrar-se</string>
+    <string name="stringBtnForgetPassword">Esqueceu sua senha ?</string>
+</resources>

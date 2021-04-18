@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="text_developers">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Theme.initialScreens" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnSecondary">@color/dark</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+    </style>
+
+    <style name="initial_background">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
+
+    <style name="input_initial_screens">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColorHint">@color/colorSecondary</item>
+        <item name="android:background">@drawable/login_input_style</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:drawablePadding">12dp</item>
+    </style>
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryStatusBar">#131A4E</color>
+    <color name="colorPrimary">#343D80</color>
+    <color name="colorPrimaryVariant">#5F5FC4</color>
+
+    <color name="colorSecondary">#C1C1F6</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark">#2D3032</color>
+
+    <color name="colorError">#FF3A3A</color>
+    <color name="colorCorrect">#2AE832</color>
+    <color name="colorSuccess">#FFA726</color>
+
+    <color name="colorLinearBackgroundPrimary">#D4DBE2</color>
+    <color name="colorLinearBackgroundSecondary">#E7EBEF</color>
+
+    <color name="colorBars">#9E9E9E</color>
+
+</resources>
