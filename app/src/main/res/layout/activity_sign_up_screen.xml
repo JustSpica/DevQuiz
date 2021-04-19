@@ -4,23 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginScreen"
+    tools:context=".SignUpScreen"
     style="@style/initial_background">
 
     <ImageView
-        android:id="@+id/imageIconLogin"
+        android:id="@+id/imageIconSignUp"
         android:layout_width="150dp"
         android:layout_height="150dp"
         android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dev_quiz_logo" />
 
     <EditText
+        android:id="@+id/editTextNameSignUp"
         style="@style/input_initial_screens"
-        android:id="@+id/editTextNameLogin"
         android:layout_width="280dp"
         android:layout_height="45dp"
         android:layout_marginTop="48dp"
@@ -29,60 +28,48 @@
         android:hint="@string/stringUsername"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.50"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageIconLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/imageIconSignUp" />
 
     <EditText
+        android:id="@+id/editTextEmailSignUp"
         style="@style/input_initial_screens"
-        android:id="@+id/editTextPasswordLogin"
+        android:layout_width="280dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="48dp"
+        android:drawableStart="@drawable/ic_email"
+        android:ems="10"
+        android:hint="@string/stringEmail"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNameSignUp" />
+
+    <EditText
+        android:id="@+id/editTextPasswordSignUp"
+        style="@style/input_initial_screens"
         android:layout_width="280dp"
         android:layout_height="45dp"
         android:layout_marginTop="48dp"
         android:drawableStart="@drawable/ic_lock"
         android:ems="10"
         android:hint="@string/stringPassword"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.50"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNameLogin" />
-
-    <Button
-        android:id="@+id/buttonForgetPassword"
-        style="@style/text_color_initial_screens"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_button_link"
-        android:text="@string/stringBtnForgetPassword"
-        android:textAllCaps="false"
+        android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordLogin" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextEmailSignUp" />
 
     <Button
-        style="@style/text_color_initial_screens"
         android:id="@+id/buttonLogin"
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:text="@string/stringBtnLogin"
-        android:background="@drawable/ic_button_ripple_effect"
-        app:layout_constraintBottom_toTopOf="@+id/buttonSignUp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonForgetPassword" />
-
-    <Button
-        android:id="@+id/buttonSignUp"
         style="@style/text_color_initial_screens"
         android:layout_width="280dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="60dp"
-        android:background="@drawable/ic_button_link"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/ic_button_ripple_effect"
         android:text="@string/stringSignUp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextPasswordSignUp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

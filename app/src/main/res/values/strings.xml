@@ -4,7 +4,9 @@
     <string name="stringDeveloperOne">Guilherme Spica Luiz</string>
     <string name="stringDeveloperTwo">Lucas Vieira</string>
     <string name="stringUsername">Nome de usuário</string>
+    <string name="stringEmail">Email</string>
     <string name="stringPassword">Senha</string>
-    <string name="stringSignIn">Cadastrar-se</string>
     <string name="stringBtnForgetPassword">Esqueceu sua senha ?</string>
+    <string name="stringBtnLogin">Entrar</string>
+    <string name="stringSignUp">Cadastrar-se</string>
 </resources>

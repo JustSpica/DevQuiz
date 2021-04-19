@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.DevQuizProject">
+
         <activity
             android:name=".SplashScreen"
             android:screenOrientation="portrait"
@@ -19,11 +20,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".LoginScreen"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.initialScreens" />
-        <activity android:name=".MainActivity" />
+
+        <activity
+            android:name=".SignUpScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.initialScreens" />
+
+        <activity
+            android:name=".MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

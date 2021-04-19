@@ -33,4 +33,6 @@ class SplashScreen : AppCompatActivity() {
             it.removeCallbacks(runnable)
         }
     }
+
+
 }

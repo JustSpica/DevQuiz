@@ -4,10 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".SplashScreen"
     style="@style/initial_background">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageIconSplashScreen"
         android:layout_width="200dp"
         android:layout_height="200dp"
         android:layout_marginStart="8dp"
@@ -33,7 +34,7 @@
         app:layout_constraintBottom_toTopOf="@+id/stringFrom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageIconSplashScreen" />
 
     <TextView
         android:id="@+id/stringFrom"
