@@ -6,7 +6,7 @@
     <string name="stringUsername">Nome de usuário</string>
     <string name="stringEmail">Email</string>
     <string name="stringPassword">Senha</string>
-    <string name="stringBtnForgetPassword">Esqueceu sua senha ?</string>
-    <string name="stringBtnLogin">Entrar</string>
-    <string name="stringSignUp">Cadastrar-se</string>
+    <string name="stringButtonForgotPassword">Esqueceu sua senha ?</string>
+    <string name="stringButtonSignIn">Entrar</string>
+    <string name="stringButtonSignUp">Cadastrar-se</string>
 </resources>

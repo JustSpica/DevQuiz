@@ -6,13 +6,13 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 
-class SplashScreen : AppCompatActivity() {
+class SplashActivity : AppCompatActivity() {
     private var delayHandler: Handler? = null
     private val SPLASH_DELAY: Long = 5000
 
-    internal val runnable =  Runnable {
+    private val runnable =  Runnable {
         if(!isFinishing) {
-            val intent = Intent(this, LoginScreen::class.java)
+            val intent = Intent(this, SignInActivity::class.java)
             startActivity(intent)
             finish()
         }
@@ -20,11 +20,10 @@ class SplashScreen : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash_screen)
+        setContentView(R.layout.activity_splash)
 
         delayHandler = Handler(Looper.getMainLooper())
         delayHandler!!.postDelayed(runnable, SPLASH_DELAY)
-
     }
 
     override fun onDestroy() {
@@ -33,6 +32,4 @@ class SplashScreen : AppCompatActivity() {
             it.removeCallbacks(runnable)
         }
     }
-
-
 }

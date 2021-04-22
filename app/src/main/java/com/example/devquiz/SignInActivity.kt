@@ -5,16 +5,16 @@ import android.os.Bundle
 import android.widget.Button
 import org.jetbrains.anko.startActivity
 
-class LoginScreen : AppCompatActivity() {
+class SignInActivity : AppCompatActivity() {
 
     private val buttonSignUp by lazy { findViewById<Button>(R.id.buttonSignUp) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login_screen)
+        setContentView(R.layout.activity_sign_in)
 
         buttonSignUp.setOnClickListener {
-            startActivity<SignUpScreen>()
+            startActivity<SignUpActivity>()
         }
     }
 }

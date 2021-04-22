@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="text_developers">
-        <item name="android:fontFamily">@font/nunito</item>
-        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/nunito_semibold</item>
+        <item name="android:textColor">@color/primary</item>
         <item name="android:textSize">16sp</item>
-        <item name="android:textStyle">normal</item>
     </style>
 
-    <style name="Theme.initialScreens" parent="Theme.AppCompat.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/colorSecondary</item>
-        <item name="colorSecondaryVariant">@color/colorPrimaryVariant</item>
-        <item name="colorOnSecondary">@color/dark</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/colorPrimary</item>
-        <!-- Customize your theme here. -->
-        <item name="android:navigationBarColor">?attr/colorPrimary</item>
+    <style name="home_screens_background">
+        <item name="android:background">@color/light_variant</item>
     </style>
 
-    <style name="initial_background">
-        <item name="android:background">?attr/colorPrimary</item>
-    </style>
-
-    <style name="input_initial_screens">
+    <style name="input_home_screens_drawable">
+        <item name="android:layout_width">363dp</item>
+        <item name="android:layout_height">50dp</item>
         <item name="android:fontFamily">@font/nunito</item>
-        <item name="android:textColor">@color/colorSecondary</item>
-        <item name="android:textColorHint">@color/colorSecondary</item>
-        <item name="android:background">@drawable/ic_input_initial_screens</item>
+        <item name="android:textColor">@color/primary_light</item>
+        <item name="android:textColorHint">@color/primary_light</item>
+        <item name="android:background">@drawable/ic_input_home_screens_drawable</item>
         <item name="android:paddingStart">16dp</item>
-        <item name="android:drawablePadding">12dp</item>
+        <item name="android:drawablePadding">16dp</item>
     </style>
 
-    <style name="text_color_initial_screens">
-        <item name="android:textColor">@color/colorSecondary</item>
+    <style name="main_button_home_screens_text_format">
+        <item name="android:layout_width">281dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/light_variant</item>
+        <item name="android:background">@drawable/ic_main_button_ripple_effect</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="button_text_format_transparent_background">
+        <item name="android:fontFamily">@font/nunito</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textAllCaps">false</item>
     </style>
 </resources>

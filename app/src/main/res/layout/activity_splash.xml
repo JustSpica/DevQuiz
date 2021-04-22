@@ -4,76 +4,72 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".SplashScreen"
-    style="@style/initial_background">
+    tools:context=".SplashActivity"
+    style="@style/home_screens_background">
 
     <ImageView
-        android:id="@+id/imageIconSplashScreen"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imageLogoSplash"
+        android:layout_width="159dp"
+        android:layout_height="159dp"
+        android:layout_marginTop="160dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.356"
         app:srcCompat="@drawable/dev_quiz_logo" />
 
     <com.agrawalsuneet.dotsloader.loaders.AllianceLoader
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         app:alliance_animDuration="500"
         app:alliance_distanceMultiplier="4"
         app:alliance_dotsRadius="7dp"
         app:alliance_drawOnlyStroke="true"
-        app:alliance_firstDotsColor="@color/colorSecondary"
-        app:alliance_secondDotsColor="@color/colorSecondary"
+        app:alliance_firstDotsColor="@color/primary_dark"
+        app:alliance_secondDotsColor="@color/primary"
         app:alliance_strokeWidth="3dp"
-        app:alliance_thirdDotsColor="@color/colorSecondary"
+        app:alliance_thirdDotsColor="@color/primary_variant"
         app:layout_constraintBottom_toTopOf="@+id/stringFrom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageIconSplashScreen" />
+        app:layout_constraintTop_toBottomOf="@+id/imageLogoSplash" />
 
     <TextView
+        style="@style/text_developers"
         android:id="@+id/stringFrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/nunito_extrabold"
+        android:layout_marginBottom="24dp"
         android:text="@string/stringFrom"
-        android:textColor="@color/colorSecondary"
+        android:fontFamily="@font/nunito"
+        android:textSize="14sp"
+        android:textColor="@color/primary_variant"
         app:layout_constraintBottom_toTopOf="@+id/stringDeveloperOne"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/stringDeveloperOne"
         style="@style/text_developers"
+        android:id="@+id/stringDeveloperOne"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
         android:text="@string/stringDeveloperOne"
         app:layout_constraintBottom_toTopOf="@+id/stringDeveloperTwo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        style="@style/text_developers"
         android:id="@+id/stringDeveloperTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/stringDeveloperTwo"
-        style="@style/text_developers"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
