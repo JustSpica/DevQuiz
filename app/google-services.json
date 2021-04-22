@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "9539924598",
+    "project_id": "devquiz-6928c",
+    "storage_bucket": "devquiz-6928c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9539924598:android:461e2466d9da9407ce2557",
+        "android_client_info": {
+          "package_name": "com.example.devquiz"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "9539924598-2p8kc0deso9ec1jvoingfafsbfu3oqjq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB3k9aRy5FKsAEVbA_PY9dhtv2ieyqyInI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "9539924598-2p8kc0deso9ec1jvoingfafsbfu3oqjq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
