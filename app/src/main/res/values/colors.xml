@@ -21,5 +21,8 @@
     <color name="color_border">#D7DBD9</color>
 
     <!-- Dark theme colors -->
+    <color name="primary_dark_night_theme">#1D2E3A</color>
+    <color name="primary_night_theme">#2E495C</color>
+    <color name="primary_variant_night_theme">#3F647E</color>
 
 </resources>

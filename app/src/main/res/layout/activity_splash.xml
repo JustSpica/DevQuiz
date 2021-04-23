@@ -18,6 +18,7 @@
         app:srcCompat="@drawable/dev_quiz_logo" />
 
     <com.agrawalsuneet.dotsloader.loaders.AllianceLoader
+        style="@style/progress_bar_color"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -25,25 +26,19 @@
         app:alliance_distanceMultiplier="4"
         app:alliance_dotsRadius="7dp"
         app:alliance_drawOnlyStroke="true"
-        app:alliance_firstDotsColor="@color/primary_dark"
-        app:alliance_secondDotsColor="@color/primary"
         app:alliance_strokeWidth="3dp"
-        app:alliance_thirdDotsColor="@color/primary_variant"
         app:layout_constraintBottom_toTopOf="@+id/stringFrom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageLogoSplash" />
 
     <TextView
-        style="@style/text_developers"
+        style="@style/text_from"
         android:id="@+id/stringFrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="24dp"
         android:text="@string/stringFrom"
-        android:fontFamily="@font/nunito"
-        android:textSize="14sp"
-        android:textColor="@color/primary_variant"
         app:layout_constraintBottom_toTopOf="@+id/stringDeveloperOne"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

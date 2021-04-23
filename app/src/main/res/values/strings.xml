@@ -9,4 +9,5 @@
     <string name="stringButtonForgotPassword">Esqueceu sua senha ?</string>
     <string name="stringButtonSignIn">Entrar</string>
     <string name="stringButtonSignUp">Cadastrar-se</string>
+    <string name="stringStart">Começar</string>
 </resources>
