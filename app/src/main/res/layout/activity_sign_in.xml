@@ -19,12 +19,12 @@
 
     <EditText
         style="@style/input_home_screens_drawable"
-        android:id="@+id/userNameInputSignIn"
+        android:id="@+id/emailInputSignIn"
         android:layout_marginTop="48dp"
         android:drawableStart="@drawable/ic_account"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="@string/stringUsername"
+        android:inputType="textEmailAddress"
+        android:hint="@string/stringEmail"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageLogoSignIn" />
@@ -39,7 +39,7 @@
         android:hint="@string/stringPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userNameInputSignIn" />
+        app:layout_constraintTop_toBottomOf="@+id/emailInputSignIn" />
 
     <Button
         android:id="@+id/buttonForgotPassword"
