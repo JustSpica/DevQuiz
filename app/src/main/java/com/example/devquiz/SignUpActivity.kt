@@ -14,7 +14,7 @@ import org.jetbrains.anko.toast
 
 class SignUpActivity : AppCompatActivity() {
 
-    private lateinit var auth: FirebaseAuth
+    private var auth: FirebaseAuth? = null
 
     private val buttonSingUp by lazy { findViewById<Button>(R.id.buttonActivitySignUpScreen) }
     private val userNameEditText by lazy { findViewById<EditText>(R.id.userNameInputSignUp) }
@@ -42,11 +42,11 @@ class SignUpActivity : AppCompatActivity() {
         if (user.userName.isEmpty() || user.email.isEmpty() || user.password.isEmpty()) {
             toast("Por favor, preencha todos os campos.")
         } else {
-            auth.createUserWithEmailAndPassword(
+            auth?.createUserWithEmailAndPassword(
                 user.email,
                 user.password
-            ).addOnCompleteListener {
-                if(it.isSuccessful) {
+            )?.addOnCompleteListener {
+                if (it.isSuccessful) {
                     toast("foi")
                     startActivity<MainActivity>()
                     finish()
