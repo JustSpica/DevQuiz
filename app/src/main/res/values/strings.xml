@@ -1,15 +1,26 @@
 <resources>
     <string name="app_name">Dev Quiz</string>
     <string name="stringFrom">From</string>
+    <string name="stringStart">Start</string>
     <string name="stringDeveloperOne">Guilherme Spica Luiz</string>
     <string name="stringDeveloperTwo">Lucas Vieira</string>
-    <string name="stringUsername">Nome de usuário</string>
+    <string name="stringUsername">User name</string>
     <string name="stringEmail">Email</string>
-    <string name="stringPassword">Senha</string>
-    <string name="stringButtonForgotPassword">Esqueceu sua senha ?</string>
-    <string name="stringButtonSignIn">Entrar</string>
-    <string name="stringButtonSignUp">Cadastrar-se</string>
-    <string name="stringStart">Começar</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="stringPassword">Password</string>
+    <string name="stringButtonForgotPassword">Forget password?</string>
+    <string name="stringButtonSignIn">Sign in</string>
+    <string name="stringButtonSignUp">Sign up</string>
+
+    <!---Strings das telas do quiz-->
+    <string name="stringButtonConfirm">Confirm</string>
+    <string name="stringButtonSkip">Skip</string>
+    <string name="stringQFrom">from</string>
+    <string name="stringShareTwitter">Share on Twitter</string>
+    <string name="stringBackToStart">Back to start</string>
+    <string name="stringCongratulation">Congratulations!</string>
+    <string name="stringIamSorry">I`m sorry</string>
+    <string name="stringYouGotIt">Have you managed to complete the Dev Quiz with 7 out of 10
+        hits.</string>
+    <string name="stringYouDidntMakeIt">You had not gotten it right more than 6 questions. With
+        sure you will have more luck in next.</string>
 </resources>
