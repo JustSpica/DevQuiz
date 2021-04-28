@@ -8,6 +8,8 @@ import android.widget.EditText
 import com.example.devquiz.model.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
@@ -18,17 +20,21 @@ class SignInActivity : AppCompatActivity() {
     private var user: FirebaseUser? = null
 
     private val buttonSignIn by lazy { findViewById<Button>(R.id.buttonActivitySignInScreen) }
+    private val buttonSignUp by lazy { findViewById<Button>(R.id.buttonSignUp) }
     private val buttonForgetPassword by lazy { findViewById<Button>(R.id.buttonForgetPassword) }
     private val emailSignIn by lazy { findViewById<EditText>(R.id.emailInputSignIn) }
     private val passwordSignIn by lazy { findViewById<EditText>(R.id.passwordInputSignIn) }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
+        auth = Firebase.auth
         user = auth?.currentUser
 
+        buttonSignUp.setOnClickListener {
+            startActivity<SignUpActivity>()
+        }
 
         authStateListener = FirebaseAuth.AuthStateListener {
             authenticateData()
@@ -46,13 +52,14 @@ class SignInActivity : AppCompatActivity() {
     private fun forgetPassword() {
         if (emailSignIn.text.toString().isEmpty()) {
             toast("Diga seu email no campo acima")
-        }
-        auth?.sendPasswordResetEmail(emailSignIn.text.toString())?.addOnCompleteListener {
-            if (it.isSuccessful) {
-                toast("Um email com redefinição de senha foi enviado para sua conta.")
-            } else {
-                toast("Erro ao tentar redefinir a senha.")
-                Log.w("forgetPassword:failure", it.exception)
+        } else {
+            auth?.sendPasswordResetEmail(emailSignIn.text.toString())?.addOnCompleteListener {
+                if (it.isSuccessful) {
+                    toast("Um email com redefinição de senha foi enviado para sua conta.")
+                } else {
+                    toast("Erro ao tentar redefinir a senha.")
+                    Log.w("forgetPassword:failure", it.exception)
+                }
             }
         }
     }
@@ -74,16 +81,15 @@ class SignInActivity : AppCompatActivity() {
         user.password = passwordSignIn.text.toString()
 
 
-        auth?.signInWithEmailAndPassword(user.email, user.password)
-            ?.addOnCompleteListener {
-                if (it.isSuccessful) {
-                    toast("logado!!")
-                    startActivity<MainActivity>()
-                    finish()
-                } else {
-                    toast("N foi")
-                }
+        auth?.signInWithEmailAndPassword(user.email, user.password) ?.addOnCompleteListener {
+            if (it.isSuccessful) {
+                toast("logado!!")
+                startActivity<MainActivity>()
+                finish()
+            } else {
+                toast("Não foi")
             }
+        }
     }
 
     override fun onStart() {
