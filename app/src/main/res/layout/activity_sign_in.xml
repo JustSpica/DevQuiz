@@ -19,7 +19,7 @@
 
     <EditText
         style="@style/input_home_screens_drawable"
-        android:id="@+id/userNameInputSignIn"
+        android:id="@+id/emailInputSignIn"
         android:layout_marginTop="48dp"
         android:drawableStart="@drawable/ic_account"
         android:ems="10"
@@ -39,39 +39,47 @@
         android:hint="@string/stringPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/userNameInputSignIn" />
+        app:layout_constraintTop_toBottomOf="@+id/emailInputSignIn" />
 
     <Button
+        android:id="@+id/buttonForgetPassword"
         style="@style/button_text_format_transparent_background"
-        android:id="@+id/buttonForgotPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/stringButtonForgotPassword"
         android:background="@drawable/ic_button_background_transparent"
+        android:text="@string/stringButtonForgotPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordInputSignIn" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordInputSignIn"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        style="@style/main_button_home_screens_text_format"
         android:id="@+id/buttonActivitySignInScreen"
+        style="@style/main_button_home_screens_text_format"
         android:layout_marginTop="60dp"
         android:text="@string/stringButtonSignIn"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonForgotPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonForgetPassword"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
-        style="@style/button_text_format_transparent_background"
         android:id="@+id/buttonSignUp"
+        style="@style/button_text_format_transparent_background"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:background="@drawable/ic_button_background_transparent"
         android:text="@string/stringButtonSignUp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonActivitySignInScreen" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonActivitySignInScreen"
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
