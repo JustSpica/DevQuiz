@@ -1,6 +1,8 @@
 ![DevQuizProject](https://user-images.githubusercontent.com/75824415/116601321-bfece680-a900-11eb-9f40-72cb3456f00b.png)
 
-<h1>Dev Quiz Project</h1> <a href="https://drive.google.com/file/d/1iTVCxUs452XnhqJbAMZ8pyBzg26TGZgP/view"><img src="![button_link](https://user-images.githubusercontent.com/75824415/116610871-11e73980-a90c-11eb-8786-07946c67e0a5.png)"/></a>
+<h1>Dev Quiz Project</h1>
+
+<a href="https://drive.google.com/file/d/1iTVCxUs452XnhqJbAMZ8pyBzg26TGZgP/view"><img src="https://user-images.githubusercontent.com/75824415/116610871-11e73980-a90c-11eb-8786-07946c67e0a5.png" /></a>
 
 Projeto de Android sobre um **Quiz Game** para desenvolvedores
 
