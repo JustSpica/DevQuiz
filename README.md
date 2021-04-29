@@ -1,8 +1,16 @@
 ![DevQuizProject](https://user-images.githubusercontent.com/75824415/116601321-bfece680-a900-11eb-9f40-72cb3456f00b.png)
 
 <h1>Dev Quiz Project</h1>
+<h4>Projeto de Android sobre um Quiz Game para desenvolvedores.</h4>
 
 > Status: Terminado ✔️
+ 
+<h3>Splash Screen do app</h3>
+![SplashScreen](https://user-images.githubusercontent.com/75824415/116604705-db59f080-a904-11eb-999c-78104b38cec8.gif)
 
-### Projeto de Android sobre um __Quiz Game__ para desenvolve
 
+<h2>Técnologias usadas</h2>
+
++ Native Kotlin
++ Database Firebase
++ Anko library
