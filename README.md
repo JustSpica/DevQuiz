@@ -1,3 +1,4 @@
-<h1>Dev-QuizProject</h1>
+<h1>Dev Quiz Project</h1>
 
-### Testando read me
+> Status: Terminado ✔️
+
