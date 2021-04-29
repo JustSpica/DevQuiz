@@ -1,2 +1,3 @@
-# DevQuiz
-Esse é um projeto de conclusão de curso Android, sobre um quiz game para desenvolvedores, feito com Kotlin, utilizando a biblioteca anko. [em desenvolvimento]
+<h1>Dev-QuizProject</h1>
+
+### Testando read me
