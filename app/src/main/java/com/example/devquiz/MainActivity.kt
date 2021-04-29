@@ -4,17 +4,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
-import androidx.fragment.app.add
-import androidx.fragment.app.commit
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
-
+import org.jetbrains.anko.startActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,8 +29,8 @@ class MainActivity : AppCompatActivity() {
         buttonStart.setOnClickListener {
             spinAnimation()
             Handler(Looper.getMainLooper()).postDelayed({
-                callFragmentQuiz(savedInstanceState)
-                buttonStart.visibility = View.INVISIBLE
+                startActivity<QuizActivity>()
+                finish()
             }, 1000)
         }
     }
@@ -44,14 +41,5 @@ class MainActivity : AppCompatActivity() {
             R.anim.spin_animation_button_start
         )
         borderButtonStart.startAnimation(spinAnimation)
-    }
-
-    private fun callFragmentQuiz(savedInstanceState: Bundle?) {
-        if (savedInstanceState == null) {
-            supportFragmentManager.commit {
-                setReorderingAllowed(true)
-                add<QuizFragment>(R.id.frame1)
-            }
-        }
     }
 }

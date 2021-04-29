@@ -11,16 +11,10 @@
     <string name="stringButtonSignIn">Sign in</string>
     <string name="stringButtonSignUp">Sign up</string>
 
-    <!---Strings das telas do quiz-->
     <string name="stringButtonConfirm">Confirm</string>
-    <string name="stringButtonSkip">Skip</string>
-    <string name="stringQFrom">from</string>
+    <string name="stringFromQuestion">de</string>
+    <string name="stringQuestion">Question</string>
     <string name="stringShareTwitter">Share on Twitter</string>
     <string name="stringBackToStart">Back to start</string>
     <string name="stringCongratulation">Congratulations!</string>
-    <string name="stringIamSorry">I`m sorry</string>
-    <string name="stringYouGotIt">Have you managed to complete the Dev Quiz with 7 out of 10
-        hits.</string>
-    <string name="stringYouDidntMakeIt">You had not gotten it right more than 6 questions. With
-        sure you will have more luck in next.</string>
 </resources>

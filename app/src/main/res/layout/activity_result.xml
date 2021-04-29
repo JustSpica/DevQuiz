@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity"
+    style="@style/home_screens_background">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/award_result" />
+
+    <TextView
+        style="@style/text_congratulations"
+        android:id="@+id/textContratulations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/stringCongratulation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <TextView
+        style="@style/text_description_finish"
+        android:id="@+id/textDescriptionFinish"
+        android:layout_width="216dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textContratulations"
+        tools:text="Você conseguiu concluir o Dev Quiz com 7 de 10 acertos"/>
+
+    <Button
+        android:id="@+id/buttonTwitter"
+        style="@style/main_button_home_screens_text_format"
+        android:layout_width="363dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/stringShareTwitter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescriptionFinish" />
+
+    <Button
+        style="@style/button_back_to_start"
+        android:id="@+id/buttonCallBack"
+        android:layout_width="363dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/stringBackToStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonTwitter" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

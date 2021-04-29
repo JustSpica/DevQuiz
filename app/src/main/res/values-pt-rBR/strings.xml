@@ -11,17 +11,10 @@
     <string name="stringButtonForgotPassword">Esqueceu sua senha?</string>
     <string name="stringButtonSignIn">Entrar</string>
     <string name="stringButtonSignUp">Cadastrar-se</string>
-
-    <!---Strings das telas do quiz-->
     <string name="stringButtonConfirm">Confirmar</string>
-    <string name="stringButtonSkip">Pular</string>
-    <string name="stringQFrom">de</string>
+    <string name="stringFromQuestion">de</string>
+    <string name="stringQuestion">Questão</string>
     <string name="stringShareTwitter">Compartilhar no Twitter</string>
     <string name="stringBackToStart">Voltar ao início</string>
     <string name="stringCongratulation">Parabéns!</string>
-    <string name="stringIamSorry">Que pena</string>
-    <string name="stringYouGotIt">Você conseguiu concluir o
-                            Dev Quiz com 7 de 10 acertos</string>
-    <string name="stringYouDidntMakeIt">Você não conseguiu acertar mais do que 6 questões. Com
-                                  certeza você tera mais sorte na próxima.</string>
 </resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple android:color="@color/primary_dark_night_theme" xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <solid android:color="@color/primary_variant_night_theme"/>
+            <stroke
+                android:color="@color/primary_variant_night_theme"
+                android:width="1dp"/>
+            <corners android:radius="25dp"/>
+        </shape>
+    </item>
+</ripple>
