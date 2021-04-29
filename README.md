@@ -4,11 +4,6 @@
 <h4>Projeto de Android sobre um Quiz Game para desenvolvedores.</h4>
 
 > Status: Terminado ✔️
- 
-<h3>Splash Screen do app</h3>
-
-![SplashScreen](https://user-images.githubusercontent.com/75824415/116604705-db59f080-a904-11eb-999c-78104b38cec8.gif)
-
 
 <h2>Técnologias usadas</h2>
 
