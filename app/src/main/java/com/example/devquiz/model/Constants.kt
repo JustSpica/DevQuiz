@@ -25,7 +25,7 @@ object Constants {
             "Moon Microsystems",
             "Sun Microsystems",
             "JetBrains",
-            1
+            3
         )
         questionList.add(questionTwo)
 
