@@ -26,8 +26,8 @@ Light Mode ⚪| Dark Mode ⚫
 -----------|----------
 ![initial](https://user-images.githubusercontent.com/75824415/116607031-e06c6f00-a907-11eb-87de-20b8fc10eddc.gif) | ![initial_n](https://user-images.githubusercontent.com/75824415/116607313-350fea00-a908-11eb-8415-9c0e0eaf2ccf.gif)
 
-<h2>Técnologias usadas</h2>
+<h2>Tecnologias usadas</h2>
 
 + Native Kotlin
-+ Database Firebase
++ Firebase
 + Anko library
