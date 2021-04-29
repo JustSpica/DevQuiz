@@ -14,7 +14,10 @@
     <string name="stringButtonConfirm">Confirmar</string>
     <string name="stringFromQuestion">de</string>
     <string name="stringQuestion">Questão</string>
+    <string name="stringWarning">Você precisa escolher uma das opções acima</string>
     <string name="stringShareTwitter">Compartilhar no Twitter</string>
     <string name="stringBackToStart">Voltar ao início</string>
     <string name="stringCongratulation">Parabéns!</string>
+    <string name="stringFinishDescription">Você conseguiu completar o Dev Quiz com </string>
+    <string name="stringHits">acertos</string>
 </resources>

@@ -1,6 +1,7 @@
 package com.example.devquiz
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.content.res.Configuration
 import android.graphics.Color
 import androidx.appcompat.app.AppCompatActivity
@@ -13,7 +14,6 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.example.devquiz.model.Constants
 import com.example.devquiz.model.Question
-import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 
 class QuizActivity : AppCompatActivity() {
@@ -22,7 +22,7 @@ class QuizActivity : AppCompatActivity() {
     private var questionList: ArrayList<Question>? = null
     private var selectedPosition: Int = 0
 
-    private var rightQuestions: Int = 0
+    private var correctAnswers: Int = 0
 
     private val progressBar by lazy { findViewById<ProgressBar>(R.id.progressBar) }
     private val numberQuestion by lazy { findViewById<TextView>(R.id.textQuestionNumber) }
@@ -59,13 +59,14 @@ class QuizActivity : AppCompatActivity() {
 
         buttonConfirm.setOnClickListener {
             if(selectedPosition == 0) {
-                toast("Você precisa escolher uma das opções acima.")
+                val warning = getString(R.string.stringWarning)
+                toast(warning)
             } else {
                 val question = questionList?.get(position - 1)
                 if(question!!.correctAnswer != selectedPosition) {
                     answerView(selectedPosition, R.drawable.ic_style_button_question_wrong,"#F44336")
                 } else {
-                    rightQuestions++
+                    correctAnswers++
                 }
                 answerView(question.correctAnswer, R.drawable.ic_style_button_question_correct, "#4CAF50")
                 buttonConfirm.isClickable = false
@@ -75,7 +76,10 @@ class QuizActivity : AppCompatActivity() {
                         viewQuestion()
                     }, 3000)
                 } else {
-                    toast("Você acertou: $rightQuestions")
+                    Handler(Looper.getMainLooper()).postDelayed({
+                        setScore()
+                        finish()
+                    }, 3000)
                 }
             }
         }
@@ -83,8 +87,10 @@ class QuizActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun viewQuestion() {
-        buttonConfirm.isClickable = true
         val question = questionList!![position - 1]
+
+        selectedPosition = 0
+        buttonConfirm.isClickable = true
 
         progressBar.progress = position
         numberQuestion.text = "$position"
@@ -141,5 +147,13 @@ class QuizActivity : AppCompatActivity() {
                 optionFour.background = ContextCompat.getDrawable(this, drawableView)
             }
         }
+    }
+
+    private fun setScore() {
+        val intent = Intent(this, ResultActivity::class.java)
+        intent.putExtra(Constants.CORRECT_ANSWERS, correctAnswers)
+        intent.putExtra(Constants.TOTAL_QUESTIONS, questionList!!.size)
+
+        startActivity(intent)
     }
 }

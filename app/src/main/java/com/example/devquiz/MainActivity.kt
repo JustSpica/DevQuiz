@@ -8,6 +8,7 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -19,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
     private val borderButtonStart by lazy { findViewById<ImageView>(R.id.borderButtonStart) }
     private val buttonStart by lazy { findViewById<Button>(R.id.buttonStart) }
+    private val buttonFAB by lazy { findViewById<FloatingActionButton>(R.id.buttonFAB) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +34,12 @@ class MainActivity : AppCompatActivity() {
                 startActivity<QuizActivity>()
                 finish()
             }, 1000)
+        }
+
+        buttonFAB.setOnClickListener {
+            auth?.signOut()
+            startActivity<SignInActivity>()
+            finish()
         }
     }
 

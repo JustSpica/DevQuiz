@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Dev Quiz</string>
     <string name="stringFrom">From</string>
@@ -10,11 +11,13 @@
     <string name="stringButtonForgotPassword">Forget password?</string>
     <string name="stringButtonSignIn">Sign in</string>
     <string name="stringButtonSignUp">Sign up</string>
-
     <string name="stringButtonConfirm">Confirm</string>
-    <string name="stringFromQuestion">de</string>
+    <string name="stringFromQuestion">Out of</string>
     <string name="stringQuestion">Question</string>
+    <string name="stringWarning">You need to choose one of the options above</string>
     <string name="stringShareTwitter">Share on Twitter</string>
     <string name="stringBackToStart">Back to start</string>
     <string name="stringCongratulation">Congratulations!</string>
+    <string name="stringFinishDescription">You were able to complete the Dev Quiz with</string>
+    <string name="stringHits">hits</string>
 </resources>

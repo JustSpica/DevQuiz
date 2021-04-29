@@ -29,15 +29,15 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        style="@style/text_description_finish"
         android:id="@+id/textDescriptionFinish"
+        style="@style/text_description_finish"
         android:layout_width="216dp"
-        android:layout_height="44dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textContratulations"
-        tools:text="Você conseguiu concluir o Dev Quiz com 7 de 10 acertos"/>
+        tools:text="Você conseguiu concluir o Dev Quiz com 7 de 10 acertos" />
 
     <Button
         android:id="@+id/buttonTwitter"
