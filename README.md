@@ -10,7 +10,7 @@ Projeto de Android sobre um **Quiz Game** para desenvolvedores
 
 <h2>Descrição:</h2>
 
-Projeto de Android feito com kotlin nativo sobre um Quiz da área de técnologia para desenvolvedores iniciantes
+Projeto de Android feito com kotlin nativo sobre um Quiz da área de tecnologia para desenvolvedores iniciantes
 
 <h2>Telas de exemplo do projeto</h2>
 
